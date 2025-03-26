@@ -1,0 +1,80 @@
+c# run rofi launcher
+"exec rofi -show combi -modes combi -combi-modes "window,drun,run""
+    m:0x4 + c:65
+    Control + space
+
+# run rofi/greenclip selector
+"rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'"
+    m:0x40 + c:33
+    Mod4 + p
+
+# take snip screenshot to clipboard
+"maim -s --bordersize=3 --color=255,0,0 | xclip -selection clipboard -t image/png"
+    m:0x41 + c:39
+    Shift+Mod5 + s
+
+# color picker to clipboard
+"xcolor | xclip -selection clipboard"
+    m:0x41 + c:54
+    Shift+Mod4 + c
+# tweak brightness öä
+"brightnessctl set +10"
+    m:0x4 + c:47
+    Control + odiaeresis
+
+"brightnessctl set 10-"
+    m:0x4 + c:48
+    Control + adiaeresis
+
+#powermenu
+"~/.config/i3/scripts/powermenu"
+    Mod4 + Escape
+    
+# media control
+"playerctl play-pause"
+    m:0x0 + c:172
+    XF86AudioPlay
+"playerctl next"
+    m:0x0 + c:171
+    XF86AudioNext
+"playerctl prev"
+    m:0x0 + c:171
+    XF86AudioNext
+# lf
+"vivaldi"
+    m:0x40 + c:56
+    Mod4 + b
+
+"dolphin"
+    m:0x40 + c:57
+    Mod4 + n
+
+"kitty nnn"
+    m:0x40 + c:55
+    Mod4 + v
+
+# keyboard brightness
+"brightnessctl --device='asus::kbd_backlight' set +1"
+    m:0x10 + c:238
+    Mod2 + XF86KbdBrightnessUp
+"brightnessctl --device='asus::kbd_backlight' set 1-"
+    m:0x10 + c:237
+    Mod2 + XF86KbdBrightnessDown
+
+# rofi calculator
+"rofi -show calc -modi calc -no-show-match -no-sort"
+    m:0x40 + c:58
+    Mod4 + m
+
+# right click
+"xdotool click 3"
+    m:0x0 + c:69
+    F3
+
+# middle click
+"xdotool click 2"
+    F2
+
+"rofi -show bl -modes "bl:~/.config/bluetooth/rofi-bluetooth""
+    m:0x5 + c:67
+    Control+Shift + F1
