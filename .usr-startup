@@ -1,0 +1,17 @@
+#!/bin/bash
+
+# polybar
+# exec polybar & 
+
+# key bindings
+xbindkeys &
+
+# wallpaper
+exec ~/.fehbg &
+
+# generic applications
+exec discord & 
+
+/usr/bin/greenclip daemon &
+
+picom &
