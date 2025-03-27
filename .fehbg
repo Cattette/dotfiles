@@ -1,2 +1,2 @@
 #!/bin/sh
-feh --no-fehbg --bg-center ~/dotfiles/wallpapers/hell.png
+feh --no-fehbg --bg-fill ~/dotfiles/wallpapers/hell.png
