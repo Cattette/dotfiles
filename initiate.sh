@@ -1,15 +1,5 @@
 #!/usr/bin/env bash
-if [ -z $1 ];
-then
-    echo "try 'laptop' or 'pc'"
-else
-    if [ $1 = laptop ]
-    then
-        
-    fi
-
-    if [ $1 = pc ]
-    then
-        echo "ello"
-    fi
-fi
+# script to switch between 1440p and 1080p
+./switch-script.sh .config/polybar/config.ini
+./switch-script.sh .config/kitty/usr-kitty.conf
+./switch-script.sh .config/rofi/config.rasi
