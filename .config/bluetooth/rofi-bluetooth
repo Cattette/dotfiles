@@ -1,12 +1,17 @@
 #!/bin/bash
 # rofi -show bl -modes "bl:./rofi-bluetooth"
-if [ x"$@" = x"FiiO" ]
+if [ "$@" = "FiiO" ]
 then
     exec ~/.config/bluetooth/bt-toggle.sh 40:ED:98:1A:3E:E2
+fi
+if [ x"$@" = x"CX Plus" ]
+then
+    exec ~/.config/bluetooth/bt-toggle.sh 80:C3:BA:37:DC:1F
 fi
 if [ x"$@" = x"quit" ]
 then
     exit 0
 fi
 echo "FiiO"
+echo "CX Plus"
 echo "quit"

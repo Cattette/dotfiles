@@ -9,12 +9,13 @@ c# run rofi launcher
     Mod4 + p
 
 # take snip screenshot to clipboard
-"maim -s --bordersize=3 --color=255,0,0 | xclip -selection clipboard -t image/png"
+# "maim -s --bordersize=3 --color=255,0,0 | xclip -selection clipboard -t image/png"
+"flameshot gui -c"
     m:0x41 + c:39
     Shift+Mod5 + s
 
 # color picker to clipboard
-"xcolor | xclip -selection clipboard"
+"xcolor -s clipboard"
     m:0x41 + c:54
     Shift+Mod4 + c
 # tweak brightness öä
@@ -33,6 +34,9 @@ c# run rofi launcher
 # media control
 "playerctl play-pause"
     m:0x0 + c:172
+    XF86AudioPlay
+"playerctl play-pause"
+    m:0x0 + c:208
     XF86AudioPlay
 "playerctl next"
     m:0x0 + c:171
@@ -62,7 +66,7 @@ c# run rofi launcher
     Mod2 + XF86KbdBrightnessDown
 
 # rofi calculator
-"rofi -show calc -modi calc -no-show-match -no-sort"
+"rofi -show calc -modi calc -no-show-match -no-sort -calc-command "echo -n '{result}' | xclip -selection clipboard""
     m:0x40 + c:58
     Mod4 + m
 
@@ -74,6 +78,10 @@ c# run rofi launcher
 # middle click
 "xdotool click 2"
     F2
+
+# main click
+"xdotool click 1"
+    F1
 
 "rofi -show bl -modes "bl:~/.config/bluetooth/rofi-bluetooth""
     m:0x5 + c:67
