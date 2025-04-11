@@ -27,7 +27,7 @@ disabled = #8f9091
 
 [bar/example]
 width = 100%
-height = 18pt
+height = 26pt
 radius = 0
 
 ; dpi = 96
@@ -51,8 +51,8 @@ separator = |
 separator-foreground = ${colors.disabled}
 
 ; font-0 = monospace;2
-font-0 = "Hack:style=Regular:size=12"
-font-1 = "Symbols Nerd Font:size=12"
+font-0 = "Hack:style=Regular:size=14"
+font-1 = "Symbols Nerd Font:size=14"
 
 modules-left = xworkspaces xwindow
 modules-right = pulseaudio memory cpu wlan battery

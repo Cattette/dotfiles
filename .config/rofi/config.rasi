@@ -1,4 +1,4 @@
 configuration {
-  font: "hack 20";
+  font: "hack 12";
 }
 @theme "~/.config/rofi/bw.rasi"
