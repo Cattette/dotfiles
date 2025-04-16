@@ -1,0 +1,6 @@
+[Desktop Entry]
+
+Type=Application
+Name=UsefulGlyphs
+Exec="cat ~/dotfiles/.config/usefulglyphs | rofi -dmenu | xclip -selection clipboard"
+Terminal=false
