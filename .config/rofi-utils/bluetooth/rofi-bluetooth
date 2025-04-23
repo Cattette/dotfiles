@@ -8,6 +8,7 @@ if [ x"$@" = x"CX Plus" ]
 then
     exec ~/.config/bluetooth/bt-toggle.sh 80:C3:BA:37:DC:1F
 fi
+
 if [ x"$@" = x"quit" ]
 then
     exit 0

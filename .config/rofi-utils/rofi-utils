@@ -20,7 +20,7 @@ then
 fi
 if [ x"$@" = x"$fun4" ]
 then
-    bash ~/dotfiles/.config/rofi-utils/imgpreview && exit
+    i3-msg exec ~/dotfiles/.config/rofi-utils/imgpreview && killall rofi
 fi
 
 if [ x"$@" = x"0 - quit" ]
