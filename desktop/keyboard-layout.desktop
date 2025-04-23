@@ -1,0 +1,6 @@
+[Desktop Entry]
+
+Type=Application
+Name=keylayout
+Exec=rofi -show kl -modes "kl:~/dotfiles/.config/keyboard-layout/keyboard-layout"
+Terminal=false

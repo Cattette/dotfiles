@@ -1,0 +1,34 @@
+#!/bin/bash
+# rofi -show bl -modes "bl:~/dotfiles/.config/rofi-utils/rofi-utils"
+fun1="1 - Fix input"
+fun2="2 - Keyboard layout"
+fun3="3 - Bluetooth devices"
+fun4="4 - View clipboard image"
+if [ "$@" = "$fun1" ]
+then
+    bash ~/.usr-input && exit
+fi
+if [ x"$@" = x"$fun2" ]
+then
+    killall rofi
+    rofi -show bl -modes "bl:~/dotfiles/.config/rofi-utils/keyboard-layout"
+fi
+if [ x"$@" = x"$fun3" ]
+then
+    killall rofi
+    rofi -show bl -modes "bl:~/dotfiles/.config/rofi-utils/bluetooth/rofi-bluetooth"
+fi
+if [ x"$@" = x"$fun4" ]
+then
+    bash ~/dotfiles/.config/rofi-utils/imgpreview && exit
+fi
+
+if [ x"$@" = x"0 - quit" ]
+then
+    exit 0
+fi
+echo "$fun1"
+echo "$fun2"
+echo "$fun3"
+echo "$fun4"
+echo "0 - quit"

@@ -1,0 +1,17 @@
+#!/bin/bash
+# rofi -show bl -modes "bl:./keyboard-layout"
+if [ "$@" = "1 - us" ]
+then
+    setxkbmap -layout us && exit
+fi
+if [ x"$@" = x"2 - se" ]
+then
+    setxkbmap -layout se && exit
+fi
+if [ x"$@" = x"0 - quit" ]
+then
+    exit 0
+fi
+echo "1 - us"
+echo "2 - se"
+echo "0 - quit"
