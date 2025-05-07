@@ -202,8 +202,8 @@ bindsym Mod1+s scratchpad show
 default_border pixel 2
 # colors and stuff
 # class		        border  backgr. text    indicator child_border
-client.focused          #1d2021 #1d2021 #d4be98 #f7f7f7 #f7f7f7
-client.focused_inactive #ff0000 #ff0000 #000000 #f7f7f7 #16080a
+client.focused          #1d2021 #1d2021 #d4be98 #bfbdb6 #bfbdb6
+client.focused_inactive #ff0000 #ff0000 #000000 #bfbdb6 #16080a
 client.unfocused        #16080a #ff0000 #000000 #ff0000 #16080a
 client.background       #ff0000 
 
@@ -213,6 +213,8 @@ gaps outer 10
 assign [class="discord"] $ws4
 assign [class="eu4"] $ws3
 assign [class="com.github.th_ch.youtube_music"] $ws10
+for_window [class="pavucontrol"] floating enable
+
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 
