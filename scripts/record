@@ -1,0 +1,36 @@
+#!/usr/bin/env bash
+
+record() {
+    videouri="$HOME/Videos/video_$(date '+%a__%b%d__%H_%M_%S').mp4"
+
+    # this hateful block of code makes sure that the selected width and heights are always rounded to even numbers, otherwise the format=yuv420p thing will refuse to work. There has to be a better way of doing this but i dont care
+    selection=$(hacksaw -f "%w %h :0.0+%x %y")
+    w="$(echo $selection | cut -d " " -f 1)"
+    wround=$(( $w - ( $w % 2) ))
+    h="$(echo $selection | cut -d " " -f 2)"
+    hround=$(( $h - ( $h % 2) ))
+    x="$(echo $selection | cut -d " " -f 3)"
+    y="$(echo $selection | cut -d " " -f 4)"
+    dimension="-s "$wround"x"$hround" -i "$x","$y""
+
+    ffmpeg -f x11grab $dimension -r 30 -c:v h264 -f alsa -i default -vf format=yuv420p "$videouri" & echo $! > /tmp/recpid
+
+    echo $videouri > /tmp/recuri
+
+    notify-send -t 1500 "Recording started"
+}
+
+end() {
+    kill "$(cat /tmp/recpid)" && rm -f /tmp/recpid
+
+    echo "file:/$(cat /tmp/recuri)" | xclip -selection clipboard -t text/uri-list && rm -f /tmp/recuri
+
+    notify-send -t 1500 "Recording ended"
+}
+
+if test -f /tmp/recpid;
+then
+    end
+else
+    record
+fi

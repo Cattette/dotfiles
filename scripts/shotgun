@@ -1,0 +1,9 @@
+#!/bin/sh -e
+# screenshot tool that copies image to disk and grabs file uri identifier
+imgpath="/tmp/hacksawimg.png"
+
+selection=$(hacksaw -f "-i %i -g %g")
+
+shotgun $selection $imgpath
+
+echo "file:/$imgpath" | xclip -selection clipboard -t text/uri-list

@@ -10,7 +10,7 @@ c# run rofi launcher
 
 # take snip screenshot to clipboard
 # "maim -s --bordersize=3 --color=255,0,0 | xclip -selection clipboard -t image/png"
-"flameshot gui -c"
+"bash $HOME/dotfiles/scripts/shotgun"
     m:0x41 + c:39
     Shift+Mod5 + s
 
@@ -83,6 +83,11 @@ c# run rofi launcher
 "xdotool click 1"
     F1
 
-"rofi -show bl -modes "bl:~/dotfiles/.config/rofi-utils/rofi-utils""
+"rofi -show bl -modes "bl:$HOME/dotfiles/.config/rofi-utils/rofi-utils""
     m:0x40 + c:54
     Mod4 + c
+
+"bash $HOME/dotfiles/scripts/record"
+    m:0x40 + c:42
+    Mod4 + g
+

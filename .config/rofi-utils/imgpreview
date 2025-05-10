@@ -3,6 +3,4 @@ output_file=${1:-"clipboard_image.png"}
 
 xclip -selection clipboard -t image/png -o > "/tmp/temp.png"
 
-feh "/tmp/temp.png"
-
-rm "/tmp/temp.png"
+feh "/tmp/temp.png" && rm "/tmp/temp.png"
