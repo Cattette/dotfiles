@@ -15,3 +15,5 @@ exec discord &
 /usr/bin/greenclip daemon &
 
 picom &
+
+export BROSWER="/usr/bin/qutebrowser"

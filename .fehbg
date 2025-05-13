@@ -1,2 +1,3 @@
 #!/bin/sh
-feh --no-fehbg --bg-fill ~/dotfiles/wallpapers/tempestofhell.png
+
+feh --no-fehbg --bg-scale ~/dotfiles/wallpapers/lily_cropped2.png

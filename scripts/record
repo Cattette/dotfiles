@@ -30,7 +30,7 @@ end() {
 
 if test -f /tmp/recpid;
 then
-    end
+    end && exit 0
 else
     record
 fi

@@ -1,4 +1,6 @@
-c# run rofi launcher
+#! /bin/bash
+
+# run rofi launcher
 "exec rofi -show combi -modes combi -combi-modes "window,drun,run""
     m:0x4 + c:65
     Control + space
@@ -44,8 +46,8 @@ c# run rofi launcher
 "playerctl prev"
     m:0x0 + c:171
     XF86AudioNext
-# lf
-"vivaldi"
+# launch browser
+"exec $BROWSER"
     m:0x40 + c:56
     Mod4 + b
 
@@ -91,3 +93,8 @@ c# run rofi launcher
     m:0x40 + c:42
     Mod4 + g
 
+"amixer set Master 2%+"
+    Alt + b:1
+
+"amixer set Master 2%-"
+    Alt + b:3

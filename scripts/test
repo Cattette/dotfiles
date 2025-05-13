@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-videouri="$HOME/Videos/video_$(date '+%a__%b%d__%H_%M_%S').mp4"
-selection=$(hacksaw -f "-s %wx%h -i :0.0+%x,%y")
-ffmpeg -f x11grab -s 1920x1080 -i :0.0+1920,0 -r 30 -c:v libx264 -pix\_fmt yuv420p -preset fast -profile:v high -level 4.1 -f alsa -i default "$videouri"
-

@@ -203,17 +203,18 @@ default_border pixel 2
 # colors and stuff
 # class		        border  backgr. text    indicator child_border
 client.focused          #1d2021 #1d2021 #d4be98 #bfbdb6 #bfbdb6
-client.focused_inactive #ff0000 #ff0000 #000000 #bfbdb6 #16080a
-client.unfocused        #16080a #ff0000 #000000 #ff0000 #16080a
+client.focused_inactive #ff0000 #ff0000 #000000 #bfbdb6 #000000
+client.unfocused        #16080a #ff0000 #000000 #ff0000 #000000
 client.background       #ff0000 
 
 gaps inner 0
-gaps outer 10
+gaps outer 0
 
 assign [class="discord"] $ws4
 assign [class="eu4"] $ws3
 assign [class="com.github.th_ch.youtube_music"] $ws10
 for_window [class="pavucontrol"] floating enable
+for_window [class="Paradox Launcher"] floating enable
 
 
 exec_always --no-startup-id ~/.config/polybar/launch.sh
