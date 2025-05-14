@@ -1,0 +1,28 @@
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+NOCOLOR='\033[0m'
+check() {
+    if ! command -v $1; then
+       echo -e "${RED}[] ${NOCOLOR}Command '$1' not found!"
+    else
+       echo -e "${GREEN}[] ${NOCOLOR}Command '$1' found."
+    fi
+}
+
+check hacksaw
+check yt-dlp
+check bat
+check feh
+check xbindkeys
+check polybar
+check greenclip
+check picom
+check vim
+check dunst
+check fastfetch
+check i3
+check kitty
+check qutebrowser
+check rofi
+check ffmpeg
+check gallery-dl
