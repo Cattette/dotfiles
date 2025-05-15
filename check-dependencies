@@ -26,3 +26,4 @@ check qutebrowser
 check rofi
 check ffmpeg
 check gallery-dl
+check shotgun
