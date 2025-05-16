@@ -30,7 +30,7 @@ c.aliases = {
     'wq': 'quit --save', 
     'wqa': 'quit --save',
     'vidow': 'spawn ~/dotfiles/scripts/videodownloader {url}',
-    'mudow': 'spawn ~/dotfiles/scripts/mudow {url}'
+    'mudow': 'spawn ~/dotfiles/scripts/mudow/mudow.sh {url}'
 }
 
 # Always restore open sites when qutebrowser is reopened. Without this

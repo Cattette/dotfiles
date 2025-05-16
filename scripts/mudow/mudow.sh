@@ -1,7 +1,9 @@
 #!/bin/bash
+# Author: cattette
+# short bash script that downloads videos as audio files with the possibility of organizing them into albums. Simply run this script with a url to a playlist as argument 1. See README for dependencies and further info.
 URL="$1"
-artls="./artist-list"
-albumls="./album-list"
+artls="$HOME/dotfiles/scripts/mudow/artist-list"
+albumls="$HOME/dotfiles/scripts/mudow/album-list"
 albumdir="$HOME/Music"
 
 # Select artist, if artist is new it is added to list, if string empty program exits
@@ -30,7 +32,7 @@ if ! [ -d "$albumdir/$album" ]; then
     mkdir "$albumdir/$album" 
 fi
 
-yt-dlp -x -o "%(fulltitle)s" -P "$albumdir/$album/" $URL
+yt-dlp -x -o "%(playlist_index)s-%(title)s" -P "$albumdir/$album/" $URL
 
 notify-send -t 2500 "Music downloaded successfully"
 
