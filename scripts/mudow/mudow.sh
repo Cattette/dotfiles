@@ -31,9 +31,22 @@ fi
 if ! [ -d "$albumdir/$album" ]; then
     mkdir "$albumdir/$album" 
 fi
-
-yt-dlp -x -o "%(playlist_index)s-%(title)s" -P "$albumdir/$album/" $URL
-
+# download the vieos from the URL, i.e the first arg
+yt-dlp -x -o "%(playlist_index)s-%(title)s" -P "$albumdir/$album/" $URL 
+f
+# this section handles metadata, we cd into the directory in case the album name has spaces in it. This is the only way i managed to get the 'for' command to work.
+cd "$albumdir/$album"
+for file in ./*.opus; do
+    # make copy of file with metadata
+    tempfile="${file}_temp"
+    ffmpeg -i "$file" -c copy \
+    -metadata artist="$art" \
+    -metadata album="$album" \
+    "$tempfile.opus"
+    
+    # replace the original
+    mv "$tempfile.opus" "$file"
+done
 notify-send -t 2500 "Music downloaded successfully"
 
 exit 0
