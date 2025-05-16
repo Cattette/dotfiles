@@ -6,5 +6,5 @@
 
 config_version: 2
 settings:
-  content.geolocation:
-    https://www.klart.se: false
+  content.javascript.clipboard:
+    https://chat.deepseek.com: access-paste

@@ -23,7 +23,15 @@ config.load_autoconfig(False)
 # Aliases for commands. The keys of the given dictionary are the
 # aliases, while the values are the commands they map to.
 # Type: Dict
-c.aliases = {'q': 'close', 'qa': 'quit', 'w': 'session-save', 'wq': 'quit --save', 'wqa': 'quit --save'}
+c.aliases = {
+    'q': 'close', 
+    'qa': 'quit', 
+    'w': 'session-save',
+    'wq': 'quit --save', 
+    'wqa': 'quit --save',
+    'vidow': 'spawn ~/dotfiles/scripts/videodownloader {url}',
+    'mudow': 'spawn ~/dotfiles/scripts/mudow {url}'
+}
 
 # Always restore open sites when qutebrowser is reopened. Without this
 # option set, `:wq` (`:quit --save`) needs to be used to save open tabs
@@ -318,7 +326,7 @@ c.window.title_format = '{current_url}{title_sep}qutebrowser'
 
 # Default zoom level.
 # Type: Perc
-c.zoom.default = '110%'
+c.zoom.default = '175%'
 
 # Available zoom levels.
 # Type: List of Perc
@@ -355,7 +363,7 @@ c.fonts.default_family = 'hack'
 # either a float value with a "pt" suffix, or an integer value with a
 # "px" suffix.
 # Type: String
-c.fonts.default_size = '12pt'
+c.fonts.default_size = '18pt'
 
 # Font used for the downloadbar.
 # Type: Font

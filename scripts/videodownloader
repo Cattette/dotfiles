@@ -3,4 +3,3 @@ yt-dlp --force-overwrites -P /tmp -o video.mp4 $1
 
 echo "file://tmp/video.mp4" | xclip -selection clipboard -t text/uri-list
 
-exit 0

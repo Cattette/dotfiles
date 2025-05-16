@@ -14,8 +14,8 @@ PROMPT_COMMAND='PS1_CMD1=$(git branch --show-current 2>/dev/null)'; PS1='\[\e[94
 bind 'TAB:menu-complete'
 
 export BROWSER="/usr/bin/qutebrowser"
-export TERM="kitty"
-export TERMINAL="kitty"
+export TERM="st"
+export TERMINAL="st"
 export EDITOR="vim"
 
 # set bat as manual viewer

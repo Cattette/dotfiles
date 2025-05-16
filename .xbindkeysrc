@@ -1,4 +1,9 @@
-#! /bin/bash
+#!/bin/bash
+
+# launch terminal
+"$TERM"
+    m:0x40 + c:36
+    Mod4 + Return
 
 # run rofi launcher
 "exec rofi -show combi -modes combi -combi-modes "window,drun,run""
@@ -22,12 +27,12 @@
     Shift+Mod4 + c
 # tweak brightness öä
 "brightnessctl set +10"
-    m:0x4 + c:47
-    Control + odiaeresis
+    m:0x8 + c:34
+    Alt + bracketleft
 
-"brightnessctl set 10-"
-    m:0x4 + c:48
-    Control + adiaeresis
+ "brightnessctl set 10-"
+    m:0x8 + c:35
+    Alt + bracketright
 
 #powermenu
 "~/.config/i3/scripts/powermenu"
@@ -55,7 +60,7 @@
     m:0x40 + c:57
     Mod4 + n
 
-"kitty nnn"
+"$TERM nnn"
     m:0x40 + c:55
     Mod4 + v
 
