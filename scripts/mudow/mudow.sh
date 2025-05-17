@@ -28,14 +28,14 @@ if ! grep -q "$album" $albumls; then
 fi
 
 # add album directory if necessary
-if ! [ -d "$albumdir/$album" ]; then
-    mkdir "$albumdir/$album" 
+if ! [ -d "$albumdir/$art - $album" ]; then
+    mkdir "$albumdir/$art - $album" 
 fi
 # download the vieos from the URL, i.e the first arg
-yt-dlp -x -o "%(playlist_index)s-%(title)s" -P "$albumdir/$album/" $URL 
+yt-dlp -x -o "%(playlist_index)s-%(title)s" -P "$albumdir/$art - $album/" $URL 
 f
 # this section handles metadata, we cd into the directory in case the album name has spaces in it. This is the only way i managed to get the 'for' command to work.
-cd "$albumdir/$album"
+cd "$albumdir/$art - $album"
 for file in ./*.opus; do
     # make copy of file with metadata
     tempfile="${file}_temp"
@@ -47,6 +47,6 @@ for file in ./*.opus; do
     # replace the original
     mv "$tempfile.opus" "$file"
 done
-notify-send -t 2500 "Music downloaded successfully"
+notify-send -t 2500 "mudow" "Music downloaded successfully"
 
 exit 0
