@@ -1,0 +1,8 @@
+"^qutebrowser$"
+  None, Up, Button4, 4
+  None Down, Button 5, 8
+
+
+".*"
+None, Thumb1, Alt_L|Left
+None, Thumb2, Alt_L|Right

@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# polybar
-# exec polybar & 
-
 # key bindings
 xbindkeys &
 
@@ -15,5 +12,3 @@ exec discord &
 /usr/bin/greenclip daemon &
 
 picom &
-
-export BROSWER="/usr/bin/qutebrowser"

@@ -220,6 +220,8 @@ exec_always --no-startup-id ~/.config/polybar/launch.sh
 
 exec_always --no-startup-id autotiling
 
+exec_always --no-startup-id xbindkeys
+
 exec ~/.usr-startup
 
 exec_always ~/.usr-input

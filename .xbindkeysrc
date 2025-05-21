@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # launch terminal
-"$TERM"
+"$TERMINAL"
     m:0x40 + c:36
     Mod4 + Return
 
@@ -103,3 +103,12 @@
 
 "amixer set Master 2%-"
     Alt + b:3
+# search selected phrase
+"bash $HOME/dotfiles/scripts/searcher.sh"
+    Mod4 + o
+
+"pactl set-sink-volume 0 +2%"
+    XF86AudioRaiseVolume
+
+"pactl set-sink-volume 0 -2%"
+    XF86AudioLowerVolume

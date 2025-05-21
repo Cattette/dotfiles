@@ -1,0 +1,3 @@
+#!/bin/bash
+
+feh -g +0+500 --bg-fill two-ladies-kissing.jpg

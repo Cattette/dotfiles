@@ -1,0 +1,3 @@
+#!/bin/bash
+
+feh -g +0+2200 --bg-fill $HOME/dotfiles/wallpapers/mars-venus.jpg

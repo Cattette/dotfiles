@@ -1,0 +1,3 @@
+#!/bin/bash
+
+feh -g +0+2400 --bg-fill $HOME/dotfiles/wallpapers/le-brun.jpg

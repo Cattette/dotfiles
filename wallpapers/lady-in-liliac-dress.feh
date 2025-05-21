@@ -1,0 +1,3 @@
+#!/bin/bash
+
+feh -g +0+0 --bg-fill lady-in-liliac-dress.jpg

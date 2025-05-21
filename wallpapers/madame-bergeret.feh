@@ -1,0 +1,3 @@
+#!/bin/bash
+
+feh -g +0+300 --bg-fill $HOME/dotfiles/wallpapers/madame-bergeret.jpg
