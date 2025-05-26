@@ -35,7 +35,7 @@
     Alt + bracketright
 
 #powermenu
-"~/.config/i3/scripts/powermenu"
+"$HOME/dotfiles/scripts/shuterdowner.sh"
     Mod4 + Escape
     
 # media control
@@ -78,17 +78,17 @@
     Mod4 + m
 
 # right click
-"xdotool click 3"
-    m:0x0 + c:69
-    F3
+#"xdotool click 3"
+#    m:0x0 + c:69
+#    F3
 
 # middle click
-"xdotool click 2"
-    F2
+#"xdotool click 2"
+#    F2
 
 # main click
-"xdotool click 1"
-    F1
+#"xdotool click 1"
+#    F1
 
 "rofi -show bl -modes "bl:$HOME/dotfiles/.config/rofi-utils/rofi-utils""
     m:0x40 + c:54
@@ -107,8 +107,8 @@
 "bash $HOME/dotfiles/scripts/searcher.sh"
     Mod4 + o
 
-"pactl set-sink-volume 0 +2%"
+"pactl set-sink-volume 0 +2% && kill -39 $(pidof dwmblocks)"
     XF86AudioRaiseVolume
 
-"pactl set-sink-volume 0 -2%"
+"pactl set-sink-volume 0 -2% && kill -39 $(pidof dwmblocks)"
     XF86AudioLowerVolume

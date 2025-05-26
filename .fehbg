@@ -1,3 +1,2 @@
 #!/bin/sh
-
-feh --no-fehbg --bg-scale ~/dotfiles/wallpapers/lily_cropped2.png
+feh --no-fehbg --bg-fill --geometry +0+300 '/home/cattette/dotfiles/wallpapers/madame-bergeret.jpg' 

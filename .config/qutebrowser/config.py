@@ -12,8 +12,8 @@
 
 config.bind('j', 'cmd-run-with-count 2 scroll down')
 config.bind('k', 'cmd-run-with-count 2 scroll up')
-config.bind('m', 'spawn mpv {url}')
 config.bind('`', 'open -w qute:settings')
+config.bind('m', 'spawn freetube {url}')
 # c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
 
 
@@ -326,7 +326,7 @@ c.window.title_format = '{current_url}{title_sep}qutebrowser'
 
 # Default zoom level.
 # Type: Perc
-c.zoom.default = '175%'
+c.zoom.default = '115%'
 
 # Available zoom levels.
 # Type: List of Perc

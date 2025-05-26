@@ -6,7 +6,5 @@
 
 config_version: 2
 settings:
-  downloads.remove_finished:
-    global: 2000
-  messages.timeout:
-    global: 1000
+  content.javascript.clipboard:
+    https://github.com: access-paste
