@@ -1,4 +1,4 @@
 configuration {
-  font: "hack 12";
+  font: "hack 20";
 }
 @theme "~/.config/rofi/ayu.rasi"

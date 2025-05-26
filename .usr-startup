@@ -11,4 +11,8 @@ exec discord &
 
 /usr/bin/greenclip daemon &
 
+dwmblocks &
+
 picom &
+
+dunst &
