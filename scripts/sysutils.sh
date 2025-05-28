@@ -3,9 +3,9 @@
 
 # collect labels for dmenu from file headers
 labels=$(
-cd ./utils
+cd $HOME/dotfiles/scripts/utils
 for file in ./*sh; do
-  sed -n '2p' $file | awk '{print $3}'
+  sed -n '2p' $file | awk -F '=' '{print $2}'
 done
 )
 # dmenu label gets number, number is removed before STDOUT
@@ -14,6 +14,6 @@ if [[ -z $choice ]]; then
   exit 0 
 fi
 # dmenu STDOUT serves as keyword to find script file. What could go wrong?
-util=$(grep -rl './utils' -e $choice)
+util=$(grep -rl $HOME/dotfiles/scripts/utils -e $choice)
 
 bash $util & exit 0
