@@ -1,3 +1,0 @@
-videouri="$HOME/Videos/video_$(date '+%a__%b%d__%H_%M_%S').mp4"
-
-echo $videouri

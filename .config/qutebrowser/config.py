@@ -33,6 +33,8 @@ c.aliases = {
     'mudow': 'spawn ~/dotfiles/scripts/mudow/mudow.sh {url}'
 }
 
+c.downloads.remove_finished = 1000
+
 # Always restore open sites when qutebrowser is reopened. Without this
 # option set, `:wq` (`:quit --save`) needs to be used to save open tabs
 # (and restore them), while quitting qutebrowser in any other way will
@@ -326,7 +328,7 @@ c.window.title_format = '{current_url}{title_sep}qutebrowser'
 
 # Default zoom level.
 # Type: Perc
-c.zoom.default = '115%'
+c.zoom.default = '175%'
 
 # Available zoom levels.
 # Type: List of Perc

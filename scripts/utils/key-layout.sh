@@ -1,5 +1,5 @@
 #!/bin/bash
-# NAME=keyboard layout
+# NAME=keyboard-layout
 
 layoutls="\
 us

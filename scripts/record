@@ -17,7 +17,7 @@ record() {
 
     echo $videouri > /tmp/recuri
 
-    notify-send -t 1500 "Recording started"
+#    notify-send -t 1500 "Recording started"
 }
 
 end() {
@@ -25,7 +25,7 @@ end() {
 
     echo "file:/$(cat /tmp/recuri)" | xclip -selection clipboard -t text/uri-list && rm -f /tmp/recuri
 
-    notify-send -t 1500 "Recording ended"
+#    notify-send -t 1500 "Recording ended"
 }
 
 if test -f /tmp/recpid;

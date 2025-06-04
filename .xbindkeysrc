@@ -5,8 +5,8 @@
     m:0x40 + c:36
     Mod4 + Return
 
-# run rofi launcher
-"exec rofi -show combi -modes combi -combi-modes "window,drun,run""
+# run launcher
+"dmenu_run -c -l 15"
     m:0x4 + c:65
     Control + space
 
@@ -60,7 +60,7 @@
     m:0x40 + c:57
     Mod4 + n
 
-"$TERM nnn"
+"$TERMINAL nnn"
     m:0x40 + c:55
     Mod4 + v
 
@@ -91,7 +91,7 @@
 #    F1
 
 #"rofi -show bl -modes "bl:$HOME/dotfiles/.config/rofi-utils/rofi-utils""
-"bash $HOME/dotfiles/scripts/sysutils.sh"
+"$HOME/dotfiles/scripts/sysutils.sh"
     m:0x40 + c:54
     Mod4 + c
 
@@ -113,3 +113,6 @@
 
 "pactl set-sink-volume 0 -2% && kill -39 $(pidof dwmblocks)"
     XF86AudioLowerVolume
+
+"bash $HOME/dotfiles/scripts/omnisearch.sh"
+    Mod4 + e

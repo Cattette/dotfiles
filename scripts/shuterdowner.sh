@@ -9,7 +9,7 @@ options() {
 sel=$(options | dmenu)
 
 if   [[ $sel = "1"* ]]; then shutdown now
-elif [[ $sel = "2"* ]]; then reboot now
+elif [[ $sel = "2"* ]]; then systemctl reboot
 else exit 0
 fi
 
