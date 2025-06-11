@@ -318,7 +318,8 @@ c.url.searchengines = {
     'w': 'https://en.wikipedia.org/w/index.php?search={}',
     'm': 'https://www.google.com/maps/place/{}',
     'r': 'https://www.reddit.com/r/{}',
-    'u': 'https://www.reddit.com/user/{}'
+    'u': 'https://www.reddit.com/user/{}',
+    'eu': 'https://eu4.paradoxwikis.com/index.php?search={}'
 }
 
 # Format to use for the window title. The same placeholders like for
@@ -328,7 +329,7 @@ c.window.title_format = '{current_url}{title_sep}qutebrowser'
 
 # Default zoom level.
 # Type: Perc
-c.zoom.default = '175%'
+c.zoom.default = '115%'
 
 # Available zoom levels.
 # Type: List of Perc

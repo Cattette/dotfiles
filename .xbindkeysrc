@@ -6,7 +6,7 @@
     Mod4 + Return
 
 # run launcher
-"dmenu_run -c -l 15"
+"j4-dmenu-desktop --dmenu="dmenu -c -l 6 -i""
     m:0x4 + c:65
     Control + space
 
@@ -99,11 +99,7 @@
     m:0x40 + c:42
     Mod4 + g
 
-"amixer set Master 2%+"
-    Alt + b:1
 
-"amixer set Master 2%-"
-    Alt + b:3
 # search selected phrase
 "bash $HOME/dotfiles/scripts/searcher.sh"
     Mod4 + o
@@ -116,3 +112,14 @@
 
 "bash $HOME/dotfiles/scripts/omnisearch.sh"
     Mod4 + e
+
+"xdotool mousemove_relative 20 0"
+    Control+Shift + l
+"xdotool mousemove_relative -- -20 0"
+    Control+Shift + h
+"xdotool mousemove_relative 0 20"
+    Control+Shift + k
+"xdotool mousemove_relative -- 0 -20"
+    Control+Shift + j
+"xdotool click 1"
+    Control+Shift + space

@@ -1,0 +1,48 @@
+diff a/st.c b/st.c	(rejected hunks)
+@@ -1046,14 +1080,42 @@ tnew(int col, int row)
+ void
+ tswapscreen(void)
+ {
+-	Line *tmp = term.line;
+-
+-	term.line = term.alt;
+-	term.alt = tmp;
+ 	term.mode ^= MODE_ALTSCREEN;
+ 	tfulldirt();
+ }
+ 
++void
++kscrollup(const Arg *a)
++{
++	int n = a->i;
++
++	if (IS_SET(MODE_ALTSCREEN))
++		return;
++
++	if (n < 0) n = (-n) * term.row;
++	if (n > TSCREEN.size - term.row - TSCREEN.off) n = TSCREEN.size - term.row - TSCREEN.off;
++	while (!TLINE(-n)) --n;
++	TSCREEN.off += n;
++	selscroll(0, n);
++	tfulldirt();
++}
++
++void
++kscrolldown(const Arg *a)
++{
++
++	int n = a->i;
++
++	if (IS_SET(MODE_ALTSCREEN))
++		return;
++
++	if (n < 0) n = (-n) * term.row;
++	if (n > TSCREEN.off) n = TSCREEN.off;
++	TSCREEN.off -= n;
++	selscroll(0, -n);
++	tfulldirt();
++}
++
+ void
+ tscrolldown(int orig, int n)
+ {
