@@ -4,3 +4,4 @@ xbindkeys &
 bash $HOME/dotfiles/.usr-startup
 bash $HOME/dotfiles/.usr-input
 exec dwm
+#exec i3

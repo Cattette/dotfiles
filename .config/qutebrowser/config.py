@@ -13,7 +13,7 @@
 config.bind('j', 'cmd-run-with-count 2 scroll down')
 config.bind('k', 'cmd-run-with-count 2 scroll up')
 config.bind('`', 'open -w qute:settings')
-config.bind('m', 'spawn freetube {url}')
+config.bind('m', 'spawn flatpak run io.freetubeapp.FreeTube {url}')
 # c.content.user_stylesheets = ["~/.config/qutebrowser/styles/youtube-tweaks.css"]
 
 
@@ -319,7 +319,9 @@ c.url.searchengines = {
     'm': 'https://www.google.com/maps/place/{}',
     'r': 'https://www.reddit.com/r/{}',
     'u': 'https://www.reddit.com/user/{}',
-    'eu': 'https://eu4.paradoxwikis.com/index.php?search={}'
+    'eu': 'https://eu4.paradoxwikis.com/index.php?search={}',
+    'lb': 'https://letterboxd.com/search/{}',
+    'vs': 'https://wiki.vintagestory.at/index.php?search={}'
 }
 
 # Format to use for the window title. The same placeholders like for

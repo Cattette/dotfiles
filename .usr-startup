@@ -11,6 +11,9 @@ exec discord &
 
 /usr/bin/greenclip daemon &
 
+xrandr --rate 360
+setxkbmap -layout us
+
 dwmblocks &
 
 picom &

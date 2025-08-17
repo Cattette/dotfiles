@@ -35,7 +35,8 @@ static const Rule rules[] = {
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
 	{ "Firefox",  NULL,       NULL,       3 << 8,       0,           -1 },
-	{ "discord",  NULL,       NULL,       1 << 3,            0,           -1 },
+	{ "discord",  NULL,       NULL,       1 << 3,       0,           -1 },
+	{ "paradox launcher",  NULL,   NULL,  0,       1,           -1 },
 };
 
 /* layout(s) */
