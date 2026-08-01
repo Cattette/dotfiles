@@ -1,0 +1,9 @@
+
+	include = "./style"
+	prompt-text = "run:"
+	width = 100%
+	height = 30
+	result-spacing = 40
+	horizontal = true
+	anchor = top
+	border-width = 0

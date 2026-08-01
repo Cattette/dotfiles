@@ -1,0 +1,26 @@
+[colors-dark]
+background = 000000
+foreground = FFFFFF
+# selection-background = #b2ceee
+# selection-foreground = #080808
+# cursor-color = #9e9e9e
+# cursor-text = #080808
+regular0=222222 # black
+regular1=F01818 # red
+regular2=24D830 # green
+regular3=F0D824 # yellow
+regular4=7890F0 # blue
+regular5=F078D8 # purpple
+regular6=54E4E4 # turq
+regular7=A5A5A5 # grey
+
+bright0=888888
+bright1=EF8383
+bright2=7ED684
+bright3=EFE28B
+bright4=B3BFEF
+bright5=EFB3E3
+bright6=9CE2E2
+bright7=FFFFFF
+# palette = 14=85dc85
+# palette = 15=e4e4e4

@@ -1,0 +1,16 @@
+	font = "VictorMono NFM Medium"
+	font-size = 16
+	text-color = #E4E4E4
+	prompt-color = #000000
+	prompt-background = #00A75A
+	selection-color = #00A75A
+	background-color = #000000
+	outline-color = #00A75A
+	border-color = #323437
+	outline-width = 0
+	border-width = 0
+	padding-top = 0
+	padding-bottom = 0
+	padding-left = 0
+	padding-right = 0
+	prompt-background-padding = 2

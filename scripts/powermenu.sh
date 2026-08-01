@@ -7,7 +7,7 @@ options() {
 "
 }
 
-sel=$(options | tofi -c $HOME/dotfiles/.config/tofi/center)
+sel=$(options | rofi -dmenu -c $HOME/dotfiles/.config/tofi/center)
 
 if   [[ $sel = "1"* ]]; then shutdown now
 elif [[ $sel = "2"* ]]; then systemctl reboot

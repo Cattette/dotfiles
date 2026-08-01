@@ -1,0 +1,17 @@
+theme = "catIBM"
+
+[editor]
+true-color = true
+line-number = "relative"
+
+[editor.cursor-shape]
+insert = "underline"
+normal = "block"
+select = "block"
+
+[editor.indent-guides]
+render = true
+character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+skip-levels = 1
+[editor.auto-save]
+focus-lost = true

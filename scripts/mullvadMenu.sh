@@ -11,7 +11,7 @@ options() {
 "
 }
 
-sel=$(options | tofi --prompt="mullvad" --width=12% -c $HOME/dotfiles/.config/tofi/center)
+sel=$(options | rofi -dmenu --prompt="mullvad" --width=12% -c $HOME/dotfiles/.config/tofi/center)
 
 if   [[ $sel = "1"* ]]; then mullvad connect && sleep 1 && notify-send "$(mullvad status)"
 elif [[ $sel = "2"* ]]; then mullvad disconnect

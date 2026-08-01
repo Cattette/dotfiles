@@ -1,0 +1,101 @@
+/* @import "./colors.css"; */
+
+* {
+    font-family: "VictorMono NFM Semibold";
+    font-size: 16pt;
+    border-radius: 0;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+
+window#waybar { 
+    background-color: #000000; 
+    color: #a9a9a9;    
+		/* border-top: 2px solid ; */
+}
+
+.modules-left {
+	background-color: #000000;
+	padding: 0px 0px 0px 0px;
+}
+
+
+.modules-right {
+	background-color: #000000;
+}
+
+
+#custom-scratch {
+	background-color: #000000;
+	color: #b8b8b8;
+}
+
+
+#workspaces {
+}
+
+
+#workspaces button {
+	padding: 0px 6px 0px 6px; 
+ 	min-width: 1px;
+	color: #a9a9a9;
+}
+
+
+#workspaces button.focused { 
+	padding: 0px 6px 0px 6px; 
+	background-color: #00A75A;
+	color: #000000;
+}
+
+
+#mode { 
+	 background-color: #e64a6b;
+	 color: #ffffff;
+     padding: 0px 5px 0px 5px;
+     border: 1px solid #2f343a;
+}
+
+
+#window {
+	 color: #00A75A;
+	 background-color: #000000;
+     padding: 0px 20px 0px 20px;
+}
+
+
+window#waybar.empty #window {
+	background-color: transparent;
+	color: transparent;
+}
+
+
+#network, #temperature, #backlight, #pulseudio, #battery {
+    padding: 0px 5px 0px 5px;
+}
+    
+
+#clock {
+	margin: 0px 15px 0px 15px;
+}
+
+
+#tray{
+   padding: 0px 8px 0px 5px;
+   margin: 0px 5px 0px 5px;
+}
+
+
+#battery.critical {
+   color: #ff5555;
+}
+
+
+#network.disconnected {
+    color: #ff5555;
+}
+
+
+

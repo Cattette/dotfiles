@@ -1,0 +1,24 @@
+inherits = "autumn"
+
+[palette]
+my_black      = "#a9a9a9" # Cursorline
+my_brown      = "#e9967e" # Member variables, Quotes
+my_gray0      = "#00070B" # Default Background
+my_gray1      = "#0e0e0e" # Ruler
+my_gray2      = "#1a1a1a" # Lighter Background (Used for status bars, line number and folding marks)
+my_gray3      = "#404040" # Selection Background
+my_gray4      = "#626C66" # Inlay-hint
+my_gray5      = "#626C66" # Comments, Invisibles, Line Highlighting
+my_gray6      = "#aaaaaa" # Dark Foreground (Used for status bars)
+my_gray7      = "#c4c4c4" # Light Foreground
+my_gray8      = "#e8e8e8" # Light Background
+my_green      = "#78b892" # Strings, Inherited Class, Markup Code, Diff Inserted
+my_red        = "#f26e74" # Keywords, Storage, Selector, Diff Changed
+my_turquoise1 = "#78b892" # Support, Regular Expressions, Escape Characters
+my_turquoise2 = "#78b892" # URL
+my_white1     = "#9c9ca3" # Default Foreground, Caret, Delimiters, Operators
+my_white2     = "#9c9ca3" # Variables, XML Tags, Markup Link Text, Markup Lists, Diff Deleted
+my_white3     = "#9c9ca3" # Classes, Markup Bold, Search Text Background
+my_white4     = "#7e7d6a" # Secondary cursors
+my_yellow1    = "#e9967e" # Functions, Methods, Attribute IDs, Headings
+my_yellow2    = "#f0c674" # Debug, Info

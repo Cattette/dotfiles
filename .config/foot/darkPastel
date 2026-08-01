@@ -1,0 +1,24 @@
+[colors-dark] 
+# Colors
+foreground=CECDC3
+background=100F0F
+# Normal colors
+regular0=000000 # black 
+regular1=AF3029 # red
+regular2=66800B # green
+regular3=AD8301 # yellow
+regular4=205EA6 # blue
+regular5=5E409D # purple
+regular6=24837B # turq
+regular7=403E3C # grey
+
+# Bright colors
+bright0=55524E  # black 
+bright1=D14D41  # red
+bright2=879A39  # green
+bright3=D0A215  # yellow
+bright4=4385BE  # blue
+bright5=8B7EC8  # purple
+bright6=3AA99F  # turq
+bright7=55524E  # grey
+

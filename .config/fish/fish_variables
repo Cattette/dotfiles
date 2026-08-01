@@ -1,0 +1,11 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR --export EDITOR:helix
+SETUVAR GITU_SHOW_EDITOR:helix
+SETUVAR --export GIT_EDITOR:helix
+SETUVAR --export GIT_VISUAL:helix
+SETUVAR --export TERMCMD:footclient
+SETUVAR --export VISUAL:helix
+SETUVAR __fish_initialized:4300
+SETUVAR __fish_webconfig_theme_notification:set\x2dtheme\x2dv1\x2d\x238
+SETUVAR fish_greeting:\x1d
