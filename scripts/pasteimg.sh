@@ -5,7 +5,8 @@ name="unamed"
 monochrome=""
 format="avif"
 colorN="256"
-resizeP="100"
+resize="100%"
+filter="cubic"
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -15,14 +16,16 @@ while [[ $# -gt 0 ]]; do
             ;;
         -1b)
             monochrome="-monochrome"
+            filter="point" # set resampling filter to nearest neighbour
             shift
             ;;
         -r)
-            resizeP="$2"
+            resize="$2"
             shift 2   # consume both "-R" and its value "50"
             ;;
-        -c)
+        -c) # color amount
             colorN="$2"
+            filter="point"
             shift 2   # consume both "-R" and its value "50"
             ;;
         -*)
@@ -36,7 +39,7 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-wl-paste -t image/png | magick - -resize "$resizeP"% -colors $colorN -colorspace $colorspace $monochrome -format avif "./$name".avif
+wl-paste -t image/png | magick - -filter $filter -resize "$resize" -colors $colorN -colorspace $colorspace $monochrome -format avif "./$name".avif
 
 echo "done!"
 
